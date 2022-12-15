@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <!-----------------------------interface : authentication------------------------->
+        <div id="authentication">
+            <h1>entrez l'email : eve.holt@reqres.in</h1>
+            <h2>entrez le mot de passe: cityslicka</h2>
+            <form>
+                <input id="email" type="email" placeholder="email">
+                <input id="password" type="password" placeholder="password">
+                <button id="authValidation">VALIDER</button>
+            </form>
+        </div>
+        <!-----------------------------interface : game------------------------------->
+        <div id="game">
+            <div id="email_score">
+                <div>
+                    <i class="bi bi-person-bounding-box"></i><span id="emailGameInterface">email</span>
+                </div>
+                <p>score : <span id="score">0</span></p>
+            </div>
+            <div id="level">
+                <span>niveaux : </span>
+                <input type="radio" id="facile" name="choices">
+                <label id="easy" for="facile">facile</label>
+                <input type="radio" id="moyen" name="choices">
+                <label id="medium" for="moyen">moyen</label>
+                <input type="radio" id="difficile" name="choices">
+                <label id="difficult" for="difficile">difficile</label>
+            </div>
+            <p id="chooseLevel">Selectionnez un niveau avant de commencer!</p>
+            <p id="errorMessage">Desole ce n'est pas le bon nombre!</p>
+            <div id="instructionEasy">
+                <p id="easyValidNbr">Entrez un nombre entier entre 1 et 10</p>
+                <p id="nbrEasyPoint">Pour chaque nombre valide vous gagnez 1 point</p>
+                <p id="nbrEasyTries">Vous avez 3 Essais pour deviner</p>
+            </div>
+            <div id="instructionMedium">
+                <p id="mediumValidNbr">Entrez un nombre entier entre 10 et 100</p>
+                <p id="nbrMediumPoint">Pour chaque nombre valide vous gagnez 3 points</p>
+                <p id="nbrMediumTies">Vous avez 5 Essais pour deviner</p>
+            </div>
+            <div id="instructionDifficult">
+                <p id="difficultValidNbr">Entrez un nombre entier entre 100 et 1000</p>
+                <p id="nbrDifficultPoint">Pour chaque nombre valide vous gagnez 5 points</p>
+                <p id="nbrDifficultTries">Vous avez 10 Essais pour deviner</p>
+            </div>
+            <p id="nbrOfTries"></p>
+            <form>
+                <input type="number" placeholder="number" id="inputNumber" min="1" max="1000">
+                <button id="play">valider</button>
+            </form>
+        </div>
+        <!-----------------------------interface : loss------------------------------->
+        <div id="loss">
+            <i class="bi bi-emoji-frown"></i>
+            <p>Desole <span id="emailLoss">email</span> vous avez perdu!</p>
+            <p>Voulez vous reessayer?</p>
+            <button id="yesLoss">oui</button>
+            <button id="noLoss">non</button>
+        </div>
+        <!------------------------------interface : success--------------------------->
+        <div id="success">
+            <i class="bi bi-emoji-smile"></i>
+            <p>Felicitation <span id="emailSuccess">name</span> vous avez gagne</p>
+            <p>Voulez vous reessayer?</p>
+            <button id="yesSuccess">oui</button>
+            <button id="noSuccess">non</button>
+        </div>
+        <!------------------------------interface : goodbey--------------------------->
+        <div id="goodBey">
+            <p>Au revoir <span id="emailBeyInterface">email</span></p>
+            <p>Votre score est : <span id="finalScore">0</span></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

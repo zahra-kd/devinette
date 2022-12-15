@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "DS-DIGI";
+    src: url(font/DS-DIGI.TTF);
+}
+*{
+    font-family: "DS-DIGI";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+    margin: 100px auto 0px auto;
+    width: 60%;
+    color: #ccff00;
+}
+
+#authentication{        /*-------------------------authentication interface----------------*/
+    text-align: center;
+    display: block;
+}
+h1, h2 {
+    font-weight: normal;
+    font-size:x-large;
+    margin-bottom: 30px;
+}
+#authentication input {
+    width: 250px;
+    padding: 7px;
+    margin: 0 auto 10px auto;
+    font-size: larger;
+    outline: none;
+    display: block;
+}
+#authentication button {
+    width: 100px;
+    margin: auto;
+    cursor: pointer;
+    padding: 7px;
+    font-size: larger;
+    color: #ccff00;
+    background-color: #808080;
+    border: 2px solid #808080;
+    border-radius: 2px;
+    display: block;
+}
+
+#game {       /*-------------------game interface-----------------------*/
+    font-size: 23px;
+    text-align: center;
+    display: none;
+}
+#email_score {
+    width: 50%;
+    margin: 0 auto 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.bi-person-bounding-box {
+    margin-right: 5px;
+}
+#level {
+    margin-bottom: 30px;
+}
+#level span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+#level label {
+    margin-right: 10px;
+    cursor: pointer;
+}
+#level input {
+    cursor: pointer;
+}
+#errorMessage {
+    color: red; 
+    display: none;
+}
+#inputNumber {
+    width: 150px;
+    padding: 3px;
+    margin-right: 4px;
+    font-size: larger;
+    outline: none;
+}
+#game button {
+    width: 90px;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 23px;
+    color: #ccff00;
+    background-color: #808080;
+    border: 2px solid #808080;
+    border-radius: 2px;
+}
+#game form {
+    margin: 20px 0 20px 0;
+
+}
+#instructionMedium, #instructionDifficult, #instructionEasy {
+    display: none;
+}
+#nbrTries {
+    display: none;
+}
+#loss, #success, #goodBey {   /*-----------------------------loss interface---------------------------*/
+    font-size: 23px;
+    text-align: center;
+    display: none;
+}
+.bi-emoji-frown, .bi-emoji-smile {
+    font-size: 50px;
+}
+#loss p, #success p, #goodBey {
+    margin-top: 30px;
+}
+#loss p:first-of-type {
+    color: red;
+}
+#loss button, #success button {
+    width: 50px;
+    padding: 4px;
+    margin-top: 30px;
+    margin-right: 7px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ccff00;
+    background-color: #808080;
+    border-radius:  5px;
+}
